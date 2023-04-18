@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="prefetch" href="/img-1.jpeg" as="image" type="image/jpeg">
+    <style>
+        .img-container {
+            border: 1px solid;
+            height: 211px;
+            width: 300px;
+        }
+
+        .img-container img {
+            display: none;
+            max-width: 100%;
+        }
+
+        .img-container:hover img {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Image</h1>
+    <div class="img-container">
+        <img src="/img-1.jpeg" loading="lazy" />
+    </div>
+</body>
+
+</html>
